@@ -1,0 +1,28 @@
+<div class="card m-b-20"
+     [class.opacity-50]="job.activated"
+    *ngFor="let job of jobs">
+  <div class="card-content">
+
+    <div class="label">inactivated</div>
+    <div class="media">
+      <div class="media-content">
+        <p class="title is-4">
+          {{job.ref}}
+          <span [ngClass]="{
+            'is-danger': job.productType === 1,
+            'is-success': job.productType === 2,
+            'is-warning': job.productType === 3}"
+            class="tag">{{job.productType | productType}}</span></p>
+        <p class="subtitle is-6">{{job.title}}</p>
+      </div>
+    </div>
+
+    <div class="content">
+      {{job.description}}
+
+      <p class="text-tiny m-t-10"><span *ngFor="let language of job?.languages" class="tag is-info is-light m-r-10 d-inline-block" >{{language.name}} | {{language.level | languageLevel}}</span></p>
+
+      <span *ngFor="let skill of job?.skills" class="d-inline-block m-r-10 tag is-success">{{skill}}</span>
+    </div>
+  </div>
+</div>

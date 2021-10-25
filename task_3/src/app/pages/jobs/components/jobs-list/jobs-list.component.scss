@@ -1,0 +1,33 @@
+:host {
+  .card-content {
+    position: relative;
+    overflow: hidden;
+  }
+  .opacity-50 {
+    .label  {
+      display: block;
+    }
+  }
+  .label {
+    display:none;
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    right: -50px;
+    text-align: center;
+    color :white;
+    background-color: red;
+      /* Browsers not below */
+      transform: rotate(45deg);
+      /* Safari */
+      -webkit-transform: rotate(45deg);
+      /* Firefox */
+      -moz-transform: rotate(45deg);
+      /* Opera */
+      -o-transform: rotate(45deg);
+      /* IE */
+      -ms-transform: rotate(45deg);
+
+  }
+}
+
