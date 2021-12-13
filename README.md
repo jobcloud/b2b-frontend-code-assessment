@@ -17,7 +17,7 @@ they do not depend on each other.
 
 - this assessment has been designed to be solved within 4-6 hours
 - it's up to you to goldplate if you like
-- your answers need to be in a txt, md or ts file
+- your answers need to be in a txt, md, ts file or zipped angular project
 - you will provide your solution as a zip (zip the folder) as an email attachment
 - you will send the archive to philippe.bonnot@jobcloud.ch 
 - be prepared to have a small presentation (15min) about your solution

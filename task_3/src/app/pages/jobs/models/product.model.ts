@@ -7,5 +7,5 @@ export const PRODUCT_TYPE = {
 
 export interface ProductModel {
   id : number;
-  string: number;
+  name: string;
 }
