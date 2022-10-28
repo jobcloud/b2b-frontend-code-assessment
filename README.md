@@ -1,26 +1,54 @@
-# JobCloud B2B
+# Angular Coding Challenge
 
-Oh God, a test like in school! Please don't lose your courage. The tasks include topics that are important to us. Even if you don't solve everything one hundred percent, it helps us to understand what makes you tick. You would solve something differently if you had more time? Mention it. You have lost a lot of time on a certain topic. Mention it. Solving the tasks gives us a starting point to get into the technical conversation. Even if you only have answers to part of the exercises, you are still in the race!
+Create an Angular application for publishing job ads. The application should contain four pages:
 
-## Frontend Code Assessment
+- Landing Page
+    - This page should contain information about the job ads platform you are building.
+      This is where we expect you to show off your CSS skills.
+- Create Job Ad Page
+    - This page should contain a form for creating a job advertisement.
+- Edit Job Ad Page
+    - This page should contain a form for editing a job advertisement.
+      The job ad model looks like this:
 
-Your coding assessment consists of three parts:
+```ts
+export interface JobAd {
+  id: number;
+  /**
+   * Title of a job ad. Required property.
+   * It's not allowed to have two job ads with the same title.
+   */
+  title: string;
+  /**
+   * Description of a job ad. Required property.
+   * Its length should not be less than 10 characters.
+   */
+  description: string;
+  /**
+   * List of skills required for a job ad.
+   */
+  skills: string[];
+  /**
+   * True if a job ad is published. False if a job ad is a draft.
+   */
+  isPublished: boolean;
+}
+```
 
-- Task 1: [Code Review](task_1/README.md)
-- Task 2: [Form Challenge](task_2/README.md)
-- Task 3: [Coding Challenge](task_3/README.md)
+- Job Ad List Page
+    - On this page, you should display a list of job advertisements.
+      It is up to you whether you want to use a table or cards to visualize the data.
+    - Each item in the list should have edit and delete actions available.
+      If the job ad is not published, the publish action should also be available.
+    - Add a search bar that allows to search for job advertisements.
+    - Add the ability to filter job ads by the `isPublished` property.
 
-In every folder you will find a dedicated README.md with the specific task. The tasks can be done in the order you prefer,
-they do not depend on each other.
+---
 
-## Constraints
+- It's up to you to choose the UI library.
+- All pages should be responsive.
+- Using a state management solution (preferably NgRx) will be considered a plus.
+- It's not required to build the backend application.
+  You can use the [`json-server`](https://www.npmjs.com/package/json-server) package for a fake REST API.
+  Building a custom API (preferably using the NestJS) will be considered a plus.
 
-- this assessment has been designed to be solved within 4-6 hours
-- it's up to you to goldplate if you like
-- your answers need to be in a txt, md, ts file or zipped angular project
-- you will provide your solution as a zip (zip the folder) as an email attachment
-- you will send the archive to philippe.bonnot@jobcloud.ch 
-- be prepared to have a small presentation (15min) about your solution
-- the presentation will be a starting point for a technical discussion
-
-Good Luck!
