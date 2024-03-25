@@ -1,0 +1,50 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Wizard",
+      "description": "Conjures spells and potions",
+      "skills": ["magic", "alchemy", "wizardry"],
+      "status": "published",
+      "createdAt": "2024-03-20T09:30:00Z",
+      "updatedAt": "2024-03-20T09:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Juggler",
+      "description": "Master of juggling balls and chainsaws",
+      "skills": ["juggling", "entertainment", "coordination"],
+      "status": "draft",
+      "createdAt": "2024-03-22T10:15:00Z",
+      "updatedAt": "2024-03-22T10:15:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Chocolate Taster",
+      "description": "Indulges in the finest chocolates",
+      "skills": ["tasting", "chocolate", "discernment"],
+      "status": "archived",
+      "createdAt": "2024-03-24T14:00:00Z",
+      "updatedAt": "2024-03-24T14:00:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Nap Consultant",
+      "description": "Expert in optimizing nap schedules",
+      "skills": ["napping", "consulting", "rest"],
+      "status": "published",
+      "createdAt": "2024-03-25T08:45:00Z",
+      "updatedAt": "2024-03-25T08:45:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Banana Peel Slip Tester",
+      "description": "Tests the slipperiness of banana peels",
+      "skills": ["testing", "banana", "balance"],
+      "status": "draft",
+      "createdAt": "2024-03-25T12:00:00Z",
+      "updatedAt": "2024-03-25T12:00:00Z"
+    }
+  ],
+  "invoices":  []
+}
